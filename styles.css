@@ -122,7 +122,7 @@ body {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 1s ease;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -168,3 +168,15 @@ body {
 
 
 /* MEDIA QUERIES (LARGE) */
+@media (min-width: 1024px) {
+    .service.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contact-form {
+        grid-template-columns: 1fr, 1fr;
+    }
+    .full-width {
+        grid-column: span 2;
+    }
+}
+
