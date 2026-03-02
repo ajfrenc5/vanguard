@@ -127,6 +127,17 @@ header {
     margin-right: 0.5rem;
 }
 
+h2 {
+    font-size: 2rem;
+    font-weight: 700; 
+    margin-bottom: 1.5rem;
+    color: var(--black);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
  #hero {
@@ -144,6 +155,7 @@ header {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
@@ -256,15 +268,24 @@ background: var(--red);
 }
 
 table { 
+    border-collapse: collapse;
     width: 100%; 
     background: var(--black); 
+    color: var(--white);
+    overflow: hidden;
     border-radius: 8px; 
 }
 
-th, td { 
+th { 
+    background-color: var(--charcoal);
+    background-color: var(--blue);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+td, th {
     padding: 1rem; 
     text-align: left; 
-    border-bottom: 1px solid var(--charcoal); 
+    border-bottom: 1px solid #444; 
 }
 
 
@@ -329,10 +350,17 @@ th, td {
     margin-bottom: 0.5rem; 
 }
 .form-group input, .form-group textarea { 
+    border: 2px solid var(--white);
     width: 100%; 
-    padding: 0.8rem; 
+    padding: 1rem; 
     border-radius: 4px; 
     border: none; 
+    transition: border-color 0.3s ease;
+}
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+    background-color: var(--white);
 }
 
 
@@ -364,10 +392,17 @@ th, td {
     }
 
 
+
 /* MEDIA QUERIES (LARGE) */
 @media (min-width: 1024px) {
     .service.grid {
         grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .service-card {
+        border-radius: 12px;
+        padding: 2.5rem;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     .menu-icon{
         display: none;
