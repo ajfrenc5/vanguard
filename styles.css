@@ -119,6 +119,20 @@ transition: background 0.3s;
 background: var(--red); 
 }
 
+.services-grid { 
+display: grid; 
+gap: 1.5rem; 
+margin-top: 2rem; 
+}
+
+.service-card {
+background: var(--blue); 
+color: white; 
+padding: 2rem; 
+border-radius: 8px;
+transition: transform 0.3s ease; 
+}
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
