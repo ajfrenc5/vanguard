@@ -173,7 +173,7 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
     .contact-form {
-        grid-template-columns: 1fr, 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .full-width {
         grid-column: span 2;
