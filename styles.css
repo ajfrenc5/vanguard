@@ -133,6 +133,10 @@ border-radius: 8px;
 transition: transform 0.3s ease; 
 }
 
+.service-card:hover { 
+transform: translateY(-10px); 
+} 
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
