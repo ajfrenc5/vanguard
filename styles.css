@@ -107,7 +107,8 @@ header {
 .nav-container { 
     display: flex; 
     justify-content: space-between; 
-    align-items: center; 
+    align-items: center;
+    align-items: relative; 
 }
 
 .logo { 
@@ -168,23 +169,27 @@ header {
     flex-direction: column; 
     position: absolute; 
     top: 100%; 
-    left: 0; 
-    width: 100%; 
+    right: 0; 
+    width: auto; 
     background: var(--black); 
-    text-align: center;
+    text-align: right;
 }
 .menu-toggle:checked ~ .nav-links { 
     display: flex; 
 }
 .nav-links li a { 
     display: block; 
-    padding: 1.5rem; 
+    padding: 1rem 0; 
     color: var(--blue); 
     font-weight: 700; 
+    font-size: 1rem;
     transition: background 0.3s, color 0.3s; 
 }
 
-
+.nav-links li a:hover { 
+    background: var(--blue); 
+    color: var(--black); 
+}
 
 .btn { 
     display: inline-block; 
