@@ -119,6 +119,14 @@ header {
     align-items: center; 
 }
 
+.logo::before {
+    content: ""; 
+    width: 2.5rem; 
+    height: 2.5rem; 
+    background: url('images/vanguard-logo.svg') no-repeat center/contain; 
+    margin-right: 0.5rem;
+}
+
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
  #hero {
@@ -128,6 +136,7 @@ header {
     place-items: center;
     text-align: center;
     padding: 1rem;
+    color: white;
 }
 
 #hero h2 {
@@ -234,6 +243,31 @@ background: var(--red);
     transform: translateY(-10px); 
 } 
 
+.blue-bg { 
+    background: var(--blue); 
+    color: white; 
+    padding: 4rem 0; 
+}
+
+.results-layout { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 3rem; 
+}
+
+table { 
+    width: 100%; 
+    background: var(--black); 
+    border-radius: 8px; 
+}
+
+th, td { 
+    padding: 1rem; 
+    text-align: left; 
+    border-bottom: 1px solid var(--charcoal); 
+}
+
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -251,7 +285,7 @@ background: var(--red);
 .bar {
     width: 50px;
     background: var(--charcoal);
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     position: relative;
     transition: height 1s ease;
     height: 0;
@@ -268,10 +302,10 @@ background: var(--red);
     color: var(--white);
 }
 @keyframes stepUp {
-    0% {
+    from {
         height: 0;
     }
-    100% {
+    to {
         height: var(--height);
     }
 }
@@ -280,9 +314,41 @@ background: var(--red);
     animation: stepUp 1s ease-in-out forwards;
 }
 
+.black-bg { 
+    background: var(--black); 
+    color: white; 
+    padding: 4rem 0; 
+}
+.contact-form { 
+    display: grid; 
+    gap: 1.5rem; 
+    margin-top: 2rem; 
+}
+.form-group label { 
+    display: block; 
+    margin-bottom: 0.5rem; 
+}
+.form-group input, .form-group textarea { 
+    width: 100%; 
+    padding: 0.8rem; 
+    border-radius: 4px; 
+    border: none; 
+}
+
+
 
 /* MEDIA QUERIES (MEDIUM) */ 
-
+    .services-grid { 
+        grid-template-columns: 1fr 1fr; 
+    }
+    .results-layout { 
+        flex-direction: row; 
+        justify-content: space-between;
+         align-items: flex-start; 
+    }
+    .results-table, .results-chart { 
+        width: 50%; 
+    }
     #results {
         grid-template-columns: 1fr 1fr;
     }
@@ -303,11 +369,36 @@ background: var(--red);
     .service.grid {
         grid-template-columns: repeat(3, 1fr);
     }
+    .menu-icon{
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width:auto;
+        background: transparent;
+        padding: 0;
+    }
+    .nav-links li a {
+        padding: 0 1rem;
+    }
     .contact-form {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 2rem;
     }
     .full-width {
         grid-column: span 2;
+    }
+    .result-layout {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 4rem;
+    }
+    .results-table, .results-chart {
+        width: 50%;
     }
 }
 
