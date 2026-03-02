@@ -1,7 +1,8 @@
-/* CSS BY YOUR NAME */
+/* CSS BY Anitra French */
 
 /* IMPORTED FONTS*/
 /* IMPORT "INTER" FROM GOOGLE FONTS"
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -63,6 +64,19 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+body { 
+font-family: var(--font); 
+background-color: var(--white); 
+color: var(--charcoal); 
+line-height: 1.6; min-width: 400px; 
+}
+.container { 
+width: 90%; 
+max-width: 1200px; 
+margin: 0 auto; 
+padding: 2rem 0; 
+}
+
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
