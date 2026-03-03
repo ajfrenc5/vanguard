@@ -211,11 +211,13 @@ h3 {
     padding: 1rem 0; 
     color: var(--blue); 
     font-weight: 700; 
+    text-transform: uppercase;
     transition: 0.3s; 
 }
 
 .nav-links li a:hover { 
-    color: var(--white); 
+    background-color: var(--blue);
+    color: var(--black); 
 }
 
 .btn { 
@@ -240,11 +242,12 @@ background: var(--red);
 }
 
 #services {
-    padding: 4rem 0 8rem 0;
+    padding: 4rem 0;
 }
 
 .services-grid { 
     display: grid; 
+    grid-template-columns: 1fr;
     gap: 1.5rem; 
     margin-top: 2rem; 
 }
@@ -396,6 +399,7 @@ footer a {
 }
 
 /* MEDIA QUERIES (MEDIUM) */ 
+@media (min-width: 768px) {
     .services-grid { 
         grid-template-columns: 1fr 1fr; 
     }
@@ -414,11 +418,12 @@ footer a {
         justify-content: space-between;
     }
     .results-table {
-        width: 50%;
+        width: 45%;
     }
     .bar-chart {
-        width: 50%;
+        width: 45%;
     }
+}
 
 
 
