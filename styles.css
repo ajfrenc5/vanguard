@@ -230,6 +230,15 @@ h3 {
 background: var(--red); 
 }
 
+.white-bg {
+    background-color: var(--white);
+    padding: 4rem 0 4rem 0;
+}
+
+#services {
+    padding: 4rem 0 8rem 0;
+}
+
 .services-grid { 
     display: grid; 
     gap: 1.5rem; 
